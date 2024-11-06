@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using static Microsoft.ApplicationInsights.MetricDimensionNames.TelemetryContext;
 
+// Denna funkunalitet ska fungera bara om kollegor har adderat Role funkunalitet på sin RegisterApi
 namespace UsersProvider_Rika.Functions
 {
     public class UpdateUserRoles(ILogger<UpdateUserRoles> logger, DataContext context)
