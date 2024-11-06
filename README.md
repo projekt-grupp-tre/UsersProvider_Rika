@@ -7,7 +7,7 @@ GetUsers:https://usersprovider.azurewebsites.net/api/GetUsers?code=HKEdVTjpyNfe5
 UpdateImage:https://usersprovider.azurewebsites.net/api/usersprofile/{id}?code=GD_Vh8_dIdIUTTsjqroQivZHQB8CwhVHue44f8oYPyGmAzFuNqvwmw%3D%3D  ,  
 UpdateUser:https://usersprovider.azurewebsites.net/api/users/{userId}?code=nXNo94PHN_SybIa19GT21JE5Xo5fe4QDcOO3thqkzYSQAzFuDfHVBA%3D%3D  ,  
 UpdateUsersRoles:https://usersprovider.azurewebsites.net/api/usersrole/{userId}?code=I-Oj52eBPeOttj1VukKlJu5SGk2jB5d6TxsGcfanizzHAzFuov4PbQ%3D%3D  , 
-
+GetUsersRoles: https://usersprovider.azurewebsites.net/api/GetUsersRoles?code=bh1OZ9PZQEd8gakUNFmTWfIebw1bmxfU7ngZxgf7xk7AAzFuPPVpNQ%3D%3D  , 
 
 UserEntity:
 {    
