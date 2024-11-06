@@ -11,7 +11,7 @@ UpdateUsersRoles:https://usersprovider.azurewebsites.net/api/usersrole/{userId}?
 
 UserEntity:
 {    
-    FirstName     
+    FirstName
     LastName 
     Address 
     City
@@ -25,17 +25,17 @@ UserEntity:
 
 Update User ---->
 {
-"аddress": "",
-"postalcode": "",
-"city" : "",
-"country" : "Sweden",
-"firstname" : "",
-"lastname" :"",
-"imageUrl" : ""
+"аddress": ""  ,
+"postalcode": ""  ,
+"city" : ""  ,
+"country" : "Sweden"  ,
+"firstname" : ""  ,
+"lastname" :""  ,
+"imageUrl" : "" 
 }
 
 RolesId: 
 50515b79-82d8-46bc-9731-bdcaf94f77af  -- Admin  ,
-5e7fe8e4-3350-4130-8aa7-1ec8c7712a67  --  Manager, 
-8b24f673-b180-4876-a7a7-7e780cc85526 -- SuperAdmin,
-fba86002-a90d-496a-b0cb-afe2cc6f96ca  -- User ,
+5e7fe8e4-3350-4130-8aa7-1ec8c7712a67  --  Manager  , 
+8b24f673-b180-4876-a7a7-7e780cc85526 -- SuperAdmin  ,
+fba86002-a90d-496a-b0cb-afe2cc6f96ca  -- User   ,
