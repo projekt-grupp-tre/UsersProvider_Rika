@@ -1,0 +1,17 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "USER_IDENTITY_SQL": "Server=tcp:sql-iidentity.database.windows.net,1433;Initial Catalog=sql-iidentity;Persist Security Info=False;User ID=SqlAdmin;Password=Bytmig123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
+
+    "SCM_DO_BUILD_DURING_DEPLOYMENT": "true",
+    "WEBSITE_NODE_DEFAULT_VERSION": "~20",
+    "AZURE_FUNCTION_PROXY_BACKEND_URL_DECODE_SLASHES": "true",
+    "ASPNETCORE_ENVIROMENT": "Development"
+
+  },
+  "Host": {
+    "CORS": "*"
+  }
+}
