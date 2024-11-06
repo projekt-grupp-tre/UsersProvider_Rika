@@ -42,6 +42,7 @@ namespace UsersProvider_Rika.Functions
                         string usersRoleID = _context.Roles.FirstOrDefault(r => r.Name == "User")!.Id;
                         string adminRoleID = _context.Roles.FirstOrDefault(r => r.Name == "Admin")!.Id;
                         string managerRoleID = _context.Roles.FirstOrDefault(r => r.Name == "Manager")!.Id;
+                        string SuperAdminRoleID = _context.Roles.FirstOrDefault(r => r.Name == "SuperAdmin")!.Id;
 
                         if (roleForm.IsUser)
                         {
@@ -79,6 +80,25 @@ namespace UsersProvider_Rika.Functions
                             var removeAdminRole = userRoles.FirstOrDefault(ur => ur.RoleId == adminRoleID);
                             _context.UserRoles.Remove(removeAdminRole!);
                         }
+                        if (roleForm.IsSuperAdmin)
+                        {
+
+                            var addAdminRole = new IdentityUserRole<string>
+                            {
+                                UserId = roleForm.UserId,
+                                RoleId = adminRoleID
+                            };
+                            if (!userRoles.Any(ur => ur.RoleId == addAdminRole.RoleId))
+                            {
+                                _context.UserRoles.Add(addAdminRole);
+                            }
+                        }
+                        else if (roleForm.IsSuperAdmin == false && userRoles.Any(ur => ur.RoleId == adminRoleID))
+                        {
+                            var removeAdminRole = userRoles.FirstOrDefault(ur => ur.RoleId == adminRoleID);
+                            _context.UserRoles.Remove(removeAdminRole!);
+                        }
+
                         if (roleForm.IsManager)
                         {
 
