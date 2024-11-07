@@ -18,7 +18,7 @@ var host = new HostBuilder()
         services.AddScoped<UserService>();
         services.AddDbContext<DataContext>(options =>
         {
-            options.UseSqlServer(Environment.GetEnvironmentVariable("USER_IDENTITY_SQL"));
+            options.UseSqlServer(Environment.GetEnvironmentVariable("SQL_serverRika"));
         });
 
 
